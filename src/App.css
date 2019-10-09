@@ -1,22 +1,23 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
+html{
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+body{
+  background-color: transparent;
+}
+div{
+  /* background-color: rgba(1,0,0,0.01); */
+  color: rgb(245,245,245);
 }
 
-.App-link {
-  color: #09d3ac;
+.App{
+  margin-top: 2rem;
+}
+.card{
+  height: 15em !important;
+  background-color: #1e2229;
+  border-radius: 2%;
+}
+.card-img-top{
+  object-fit: contain;
+  height: 10em;
 }
