@@ -17,7 +17,20 @@ div{
   background-color: #1e2229;
   border-radius: 2%;
 }
+.card-lg{
+  background-color: #1e2229;
+  /* background-color: #191e24; */
+  border-radius: 2%;
+}
 .card-img-top{
   object-fit: contain;
-  height: 10em;
+  height: 7em;
+}
+.card-img-top-lg{
+  object-fit: contain;
+  height: 250px;
+
+}
+.bg-pokemon-red{
+  background-color: #ff0000;
 }
