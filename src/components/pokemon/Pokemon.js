@@ -123,7 +123,7 @@ export default class Pokemon extends Component {
           {this.state.name === "" ||
           this.state.description.flavor_text === "" ? (
             <div
-              class="spinner-border text-danger"
+              className="spinner-border text-danger"
               role="status"
               style={{
                 width: "3em",
