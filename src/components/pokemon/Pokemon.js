@@ -135,7 +135,7 @@ export default class Pokemon extends Component {
             </div>
           ) : (
             <>
-              <h3
+              <h4
                 className="card-header"
                 style={{
                   height: "65px",
@@ -156,7 +156,7 @@ export default class Pokemon extends Component {
                   {this.state.name}
                 </span>
                 <span style={{ float: "right" }}>{this.state.types}</span>
-              </h3>
+              </h4>
               <div className="card-body">
                 <div className="row">
                   <img
