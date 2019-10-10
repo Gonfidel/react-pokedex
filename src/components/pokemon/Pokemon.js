@@ -130,7 +130,7 @@ export default class Pokemon extends Component {
                 height: "3em"
               }}
             >
-              <span class="sr-only">Loading...</span>
+              <span className="sr-only">Loading...</span>
             </div>
           ) : (
             <>
