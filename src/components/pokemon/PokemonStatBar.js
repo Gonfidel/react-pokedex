@@ -4,7 +4,7 @@ export default class PokemonStatBar extends Component {
   render() {
     return (
         <tr>
-          <td style={{ width: "12vw" }}>{`${this.props.statName}: `}</td>
+          <td style={{ width: "50%" }}>{`${this.props.statName}: `}</td>
           <td>
             <div className="progress">
               <div

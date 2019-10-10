@@ -162,10 +162,10 @@ export default class Pokemon extends Component {
                   <img
                     src={this.state.imageUrl}
                     alt="Pokemon-Image"
-                    className="card-img-top-lg col-6"
+                    className="card-img-top-lg md-col-4 col-sm-6"
                   />
                   <span
-                    className="text-white lead col-6"
+                    className="text-white lead col-md-6 col-sm-12"
                     style={{ fontWeight: "300" }}
                   >
                     <p>{this.state.description.flavor_text}</p>
@@ -196,11 +196,11 @@ export default class Pokemon extends Component {
                     stat={this.state.stats.speed}
                   />
                   <PokemonStatBar
-                    statName={`Special Attack`}
+                    statName={`Sp Attack`}
                     stat={this.state.stats.specialAttack}
                   />
                   <PokemonStatBar
-                    statName={`Special Defense`}
+                    statName={`Sp Defense`}
                     stat={this.state.stats.specialDefense}
                   />
                 </table>
