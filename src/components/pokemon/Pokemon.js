@@ -126,9 +126,8 @@ export default class Pokemon extends Component {
               class="spinner-border text-danger"
               role="status"
               style={{
-                width: "10em",
-                height: "10em",
-                margin: " 5em auto 5em auto"
+                width: "3em",
+                height: "3em"
               }}
             >
               <span class="sr-only">Loading...</span>
@@ -162,15 +161,16 @@ export default class Pokemon extends Component {
                   <img
                     src={this.state.imageUrl}
                     alt="Pokemon-Image"
-                    className="card-img-top-lg md-col-4 col-sm-6"
+                    className="card-img-top-lg col-md-6 col-sm-12"
                   />
                   <span
                     className="text-white lead col-md-6 col-sm-12"
                     style={{ fontWeight: "300" }}
                   >
-                    <p>{this.state.description.flavor_text}</p>
-
-                    <div className="row">
+                    {/* <p> */}
+                    {this.state.description.flavor_text}
+                    {/* </p> */}
+                    <div className="row my-3">
                       <span className="col-6">
                         {`Height: ${this.state.height}'`}
                       </span>
@@ -179,6 +179,7 @@ export default class Pokemon extends Component {
                       </span>
                     </div>
                   </span>
+
                 </div>
 
                 <table style={{ width: "100%" }}>

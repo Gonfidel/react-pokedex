@@ -27,8 +27,10 @@ div{
   height: 7em;
 }
 .card-img-top-lg{
-  object-fit: contain;
-  /* height: 100%; */
+  /* object-fit: cover; */
+  object-fit: scale-down;
+  height: 300px;
+  margin: 0px;
 
 }
 .bg-pokemon-red{
