@@ -4,7 +4,7 @@ import PokemonList from "../pokemon/PokemonList";
 export default class Dashboard extends Component {
   render() {
     return (
-      <div className="container App align-content-center">
+      <div className="container-fluid App align-content-center">
           <PokemonList />
       </div>
       

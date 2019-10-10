@@ -25,7 +25,7 @@ export default class PokemonCard extends Component {
   }
   render() {
     return (
-      <div className="col-md-3 col-sm-6 mb-5 mx-3">
+      <div className="col-md-3 col-sm-5 mb-5 mx-1">
       <Link to={`Pokemon/${this.state.pokemonIndex}`} style={{textDecoration: 'none'}}>
           <div className="card p-3">
             <h4 className=" text-light">
@@ -39,7 +39,7 @@ export default class PokemonCard extends Component {
               alt="Card image cap"
             />
             <div className="card-body">
-              <h5 className="card-title text-white" style={{textTransform: 'capitalize'}}>{this.state.name}</h5>
+              <h6 className="card-title text-white" style={{textTransform: 'capitalize'}}>{this.state.name}</h6>
             </div>
           </div>
       </Link>

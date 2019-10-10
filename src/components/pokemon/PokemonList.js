@@ -15,7 +15,7 @@ export default class PokemonList extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="row">
+        <div className="row justify-content-center">
           {this.state.pokemon.length < 1 ? (
             <div class="spinner-border text-danger" role="status" style={{width: '10em', height: '10em', margin: ' 5em auto 5em auto'}}>
               <span class="sr-only">Loading...</span>
