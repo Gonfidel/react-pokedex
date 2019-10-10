@@ -97,7 +97,7 @@ export default class Pokemon extends Component {
     });
 
     const types = pokemonResponse.data.types.map(type => (
-      <span
+      <span key={type.type.name}
         style={{ backgroundColor: `#${TYPE_COLORS[type.type.name]}` }}
         className="badge badge-pill mr-2"
       >
@@ -183,27 +183,30 @@ export default class Pokemon extends Component {
                 </div>
 
                 <table style={{ width: "100%" }}>
+                <tbody>
+
                   <PokemonStatBar statName={`HP`} stat={this.state.stats.hp} />
                   <PokemonStatBar
                     statName={`Attack`}
                     stat={this.state.stats.attack}
-                  />
+                    />
                   <PokemonStatBar
                     statName={`Defense`}
                     stat={this.state.stats.defense}
-                  />
+                    />
                   <PokemonStatBar
                     statName={`Speed`}
                     stat={this.state.stats.speed}
-                  />
+                    />
                   <PokemonStatBar
                     statName={`Sp Attack`}
                     stat={this.state.stats.specialAttack}
-                  />
+                    />
                   <PokemonStatBar
                     statName={`Sp Defense`}
                     stat={this.state.stats.specialDefense}
-                  />
+                    />
+                    </tbody>
                 </table>
               </div>
             </>
